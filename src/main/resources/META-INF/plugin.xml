@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>org.nik.project-necromancer</id>
+    <name>Project Necromancer</name>
+    <vendor>Nikolay Chashnikov</vendor>
+
+  <description><![CDATA[Provides 'Resurrect Project' action (in 'Tools' menu) which recreates project directories from its configuration files.
+    ]]></description>
+
+  <idea-version since-build="171.0"/>
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <actions>
+      <action class="org.nik.projectNecromancer.ResurrectProjectAction" id="project-necromancer.ResurrectProject" text="Resurrect Project">
+          <add-to-group group-id="ToolsMenu" anchor="last"/>
+      </action>
+  </actions>
+</idea-plugin>
